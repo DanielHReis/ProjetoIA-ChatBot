@@ -1,0 +1,11 @@
+# Arquivos de ambiente e segredos
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
