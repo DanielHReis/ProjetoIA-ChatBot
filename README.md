@@ -40,7 +40,17 @@ Também há exemplos iniciais no notebook de uso de `ChatPromptTemplate` para tr
 
 4. Converse com o BotBot. Digite `x` para sair.
 
-## Observações de segurança
+## Configuração da chave da API
+
+A chave da Groq não deve ser versionada. Existem duas formas de fornecê-la:
+
+1. **Arquivo local `api_key.py`** (recomendado para este projeto):
+   - Copie `api_key.example.py` para `api_key.py`;
+   - Substitua `"sua_chave_aqui"` pela sua chave real;
+   - `api_key.py` está no `.gitignore` e **não** será enviado ao GitHub.
+
+2. **Variável de ambiente** `GROQ_API_KEY`:
+   - Se `api_key.py` não existir, o notebook tenta ler de `os.getenv('GROQ_API_KEY')`.
 
 O notebook contém uma chave de API hardcoded apenas para fins de estudo. Em projetos reais, utilize variáveis de ambiente e nunca versione segredos no repositório.
 

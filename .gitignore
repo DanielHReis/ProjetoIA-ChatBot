@@ -1,6 +1,7 @@
 # Arquivos de ambiente e segredos
 .env
 *.env
+api_key.py
 
 # Python
 __pycache__/
