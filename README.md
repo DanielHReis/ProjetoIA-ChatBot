@@ -42,18 +42,16 @@ Também há exemplos iniciais no notebook de uso de `ChatPromptTemplate` para tr
 
 ## Configuração da chave da API
 
-A chave da Groq não deve ser versionada. Existem duas formas de fornecê-la:
-
-1. **Arquivo local `api_key.py`** (recomendado para este projeto):
-   - Copie `api_key.example.py` para `api_key.py`;
-   - Substitua `"sua_chave_aqui"` pela sua chave real;
-   - `api_key.py` está no `.gitignore` e **não** será enviado ao GitHub.
-
-2. **Variável de ambiente** `GROQ_API_KEY`:
-   - Se `api_key.py` não existir, o notebook tenta ler de `os.getenv('GROQ_API_KEY')`.
-
-O notebook contém uma chave de API hardcoded apenas para fins de estudo. Em projetos reais, utilize variáveis de ambiente e nunca versione segredos no repositório.
+Como obter a API Key da Groq
+1. Acesse o GroqCloud Console.
+2. Faça login ou crie uma conta gratuita.
+3. Acesse a página API Keys.
+4. Clique em Create API Key.
+5. Defina um nome para sua chave, por exemplo, BotBot.
+6. Clique em Submit para gerar sua chave.
+7. Copie e guarde a API Key em um local seguro.
+Atenção: a API Key é pessoal e não deve ser compartilhada ou publicada no GitHub.
 
 ## Autor
 
-Daniel Henrique Reis — projeto de estudo para portfólio/currículo.
+Daniel Henrique Reis e Silva — projeto de estudo para portfólio/currículo.
